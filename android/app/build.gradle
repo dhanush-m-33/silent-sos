@@ -1,0 +1,13 @@
+// android/app/build.gradle
+android {
+    defaultConfig {
+        minSdkVersion 21        // ← change from default 16
+        targetSdkVersion 34
+        compileSdkVersion 34
+        multiDexEnabled true
+    }
+}
+
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'   // ← add this
+}
